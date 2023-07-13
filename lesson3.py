@@ -40,7 +40,11 @@
 
 # print(reverse_list([1, 2, 3, 4, 5]))
 
-Write a Python program that asks the user to enter a sentence and counts the number of words in the sentence. Assume that words are separated by spaces.
+# Write a Python program that asks the user to enter a sentence and counts the number of words in the sentence. Assume that words are separated by spaces.
 
 def num_words(sentence):
-  a
+  num = sentence.count(" ")
+  return f"There are {num + 1} words in this sentence."
+
+entry = input("Please enter a sentence: ")
+print(num_words(entry))
